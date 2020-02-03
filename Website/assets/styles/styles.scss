@@ -1,0 +1,199 @@
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/mixins';
+@import '../../node_modules/bootstrap/scss/root';
+@import '../../node_modules/bootstrap/scss/reboot';
+@import '../../node_modules/bootstrap/scss/type';
+@import '../../node_modules/bootstrap/scss/images';
+@import '../../node_modules/bootstrap/scss/code';
+@import '../../node_modules/bootstrap/scss/grid';
+@import '../../node_modules/bootstrap/scss/tables';
+@import '../../node_modules/bootstrap/scss/forms';
+@import '../../node_modules/bootstrap/scss/buttons';
+@import '../../node_modules/bootstrap/scss/transitions';
+@import '../../node_modules/bootstrap/scss/dropdown';
+@import '../../node_modules/bootstrap/scss/button-group';
+@import '../../node_modules/bootstrap/scss/input-group';
+@import '../../node_modules/bootstrap/scss/custom-forms';
+@import '../../node_modules/bootstrap/scss/nav';
+@import '../../node_modules/bootstrap/scss/navbar';
+@import '../../node_modules/bootstrap/scss/card';
+@import '../../node_modules/bootstrap/scss/breadcrumb';
+@import '../../node_modules/bootstrap/scss/pagination';
+@import '../../node_modules/bootstrap/scss/badge';
+@import '../../node_modules/bootstrap/scss/alert';
+@import '../../node_modules/bootstrap/scss/progress';
+@import '../../node_modules/bootstrap/scss/media';
+@import '../../node_modules/bootstrap/scss/list-group';
+@import '../../node_modules/bootstrap/scss/close';
+@import '../../node_modules/bootstrap/scss/utilities';
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+
+/* Variables */
+$colors: (
+    $primary: #22372b,
+    $secondary: #a3b2a4,
+    highlights: #ff8200,
+);
+
+$templateColors: map-merge($colors, $theme-colors);
+
+/* Styles */
+body {
+    background: white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1 span:first-child {
+    color: map-get($templateColors, $primary);
+    font-size: 54px;
+    text-transform: uppercase;
+    display: block;
+}
+
+h1 span:nth-child(2) {
+    color: map-get($templateColors, highlights);
+    font-size: 41px;
+    text-transform: uppercase;
+    display: block;
+    line-height: 0.6;
+}
+
+h2 {
+    color: map-get($templateColors, highlights);
+    line-height: 1.5;
+}
+
+.bg-nn-primary {
+    background-color: map-get($templateColors, $primary);
+}
+
+.bg-nn-secondary {
+    background-color: map-get($templateColors, $secondary);
+}
+
+.bg-nn-highlights {
+    background-color: map-get($templateColors, highlights);
+}
+
+.border-nn-primary {
+    border-color: map-get($templateColors, $primary);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: map-get($templateColors, highlights);
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: lighten(map-get($templateColors, highlights), 20%);
+}
+
+.navbar-light .navbar-nav .nav-link.disabled {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.jumbotron-naynay {
+    height: 591px;
+    display: flex;
+}
+
+.container-naynay {
+    background: rgba(white, 0.7);
+    margin: auto;
+    width: 85%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 208px;
+}
+
+.flexbox-naynay-row {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.lead-naynay {
+    @extend .flexbox-naynay-row;
+    max-width: 1105px;
+    justify-content: center;
+    color: map-get($templateColors, $primary);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.ornament-naynay {
+    @extend .flexbox-naynay-row;
+    max-width: 500px;
+    justify-content: space-between;
+}
+
+/* Header and Footer */
+
+footer {
+    font-size: 0.875rem;
+    text-align: center;
+    background-color: map-get($templateColors, $primary);
+    color: map-get($templateColors, $secondary);
+}
+
+footer ul {
+    padding-left: 0;
+    margin-bottom: 1rem;
+}
+
+footer li {
+    display: inline-block;
+
+    + li {
+        margin-left: 1rem;
+    }
+}
+
+footer a {
+    font-weight: 600;
+    color: map-get($templateColors, highlights);
+
+    &:hover {
+        color: map-get($templateColors, highlights);
+    }
+}
+
+@media (min-width: 576px) {
+    footer {
+        text-align: left;
+    }
+}
+
+/* Pricing cards */
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.card-img-top {
+    display: flex;
+    height: 200px;
+}
+
+.card-img-top svg path {
+    fill: map-get($templateColors, $primary);
+}
+
+.card-img-top.bg-nn-primary svg path {
+    fill: lighten(map-get($templateColors, $primary), 15%);
+}
+
+.card-img-top svg {
+    height: 120px;
+    margin: auto;
+}
+
+.card-body-top {
+    @extend .card-body;
+    flex: 0 1 auto;
+}
