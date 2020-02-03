@@ -13,12 +13,12 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://jordenmik@bitbucket.org/langdonnl/xborder.git"
+        "url": "git+https://github.com/synchronizedcontrol/website-naynay.git"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
-    "homepage": "https://bitbucket.org/langdonnl/xborder#readme",
+    "homepage": "https://github.com/synchronizedcontrol/website-naynay#readme",
     "dependencies": {
         "bootstrap": "^4.3.1",
         "next": "^9.1.3",
