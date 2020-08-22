@@ -5,7 +5,7 @@ import Jumbotron from '../components/Jumbotron';
 import '../assets/styles/styles.scss';
 
 const PageInformation = {
-    title: 'Over NayNay',
+    title: 'Over {naynay}',
     pageTitle: 'Over ons',
 };
 
@@ -48,14 +48,14 @@ const OverOns = (): JSX.Element => (
                         eigenwijs en onafhankelijk in denken en doen kan zijn. In de periode dat ik bij een grote
                         zorgverzekeraar werkte, had ik een leidinggevende waar het bijzonder goed mee klikte, maar waar
                         ik het niet altijd mee eens was. In onze bilaterale overleggen kreeg ik daardoor de bijnaam Nee
-                        Nee oftewel Nay Nay!
+                        Nee oftewel <span className="naynay">Nay Nay</span>!
                     </p>
                     <p>
-                        In je interieur is het eveneens van belang om eigenwijs te zijn en te weten wanneer je Nay Nay
-                        moet zeggen. Het gaat uiteindelijk om de plek waar je je moet kunnen ontspannen, waar je tijd
-                        met familie en vrienden door kan brengen en waar je je veilig en geborgen voelt. Een interieur
-                        dat daarbij past, ongeacht hoe groot of klein de verandering die daarvoor ook nodig is….dat is
-                        iets waar ik je graag bij wil helpen!
+                        In je interieur is het eveneens van belang om eigenwijs te zijn en te weten wanneer je{' '}
+                        <span className="naynay">Nay Nay</span> moet zeggen. Het gaat uiteindelijk om de plek waar je je
+                        moet kunnen ontspannen, waar je tijd met familie en vrienden door kan brengen en waar je je
+                        veilig en geborgen voelt. Een interieur dat daarbij past, ongeacht hoe groot of klein de
+                        verandering die daarvoor ook nodig is….dat is iets waar ik je graag bij wil helpen!
                     </p>
                 </div>
             </div>

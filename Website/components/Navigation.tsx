@@ -30,7 +30,11 @@ const Navigation = (): JSX.Element => (
                     <a className="nav-link">Inspiratie</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link">Wat bieden we?</a>
+                    <ActiveLink href="/wat-bieden-we" activeClassName="active">
+                        <a className="nav-link">
+                            Wat bieden we? <span className="sr-only">(current)</span>
+                        </a>
+                    </ActiveLink>
                 </li>
                 <li className="nav-item">
                     <ActiveLink href="/prijzen" activeClassName="active">

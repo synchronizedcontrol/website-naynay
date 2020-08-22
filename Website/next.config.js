@@ -3,7 +3,10 @@ const withSass = require('@zeit/next-sass');
 module.exports = withSass({
   exportPathMap: function() {
     return {
-      '/': { page: '/' }
+      '/': { page: '/' },
+      '/prijzen': { page: '/prijzen' },
+      '/over-ons': { page: '/over-ons' },
+      '/contact': { page: '/contact' }
     };
   }
 });

@@ -28,6 +28,7 @@
 @import '../../node_modules/bootstrap/scss/close';
 @import '../../node_modules/bootstrap/scss/utilities';
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
 
 /* Variables */
 $colors: (
@@ -62,6 +63,12 @@ h1 span:nth-child(2) {
 h2 {
     color: map-get($templateColors, highlights);
     line-height: 1.5;
+}
+
+span.naynay {
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: map-get($templateColors, highlights) !important;
+    display: inline !important;
 }
 
 .bg-nn-primary {
@@ -190,6 +197,7 @@ footer a {
 
 .card-img-top svg {
     height: 120px;
+    width: 100px;
     margin: auto;
 }
 
@@ -197,3 +205,12 @@ footer a {
     @extend .card-body;
     flex: 0 1 auto;
 }
+
+/* End pricing cards */
+@media (min-width: 360px) {
+    .ornament-naynay .img-fluid {
+        max-width: 45%;
+    }
+}
+
+/* Body media queries */

@@ -5,6 +5,8 @@ import { PageCombination, H2Link } from './HeaderTags';
 interface BlogPostProps {
     title: string;
     isTip: boolean;
+    html: string;
+    imageUrl: string;
 }
 
 const BlogPost: NextPage<BlogPostProps> = props => {
@@ -29,17 +31,6 @@ const BlogPost: NextPage<BlogPostProps> = props => {
             </div>
         </div>
     );
-};
-
-BlogPost.getInitialProps = async ({ req }): Promise<BlogPostProps> => {
-    try {
-        const userAgent = req ? req.headers['user-agent'] || '' : navigator.userAgent;
-        return { userAgent };
-    } catch (error) {
-        const userAgent = 'An error has occured';
-        console.log(error);
-        return { userAgent };
-    }
 };
 
 export default BlogPost;

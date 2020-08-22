@@ -1,5 +1,6 @@
 /website/node_modules
 /website/.next
+/website/out
 /backend/frontend
 /backend/pass.txt
 /poc

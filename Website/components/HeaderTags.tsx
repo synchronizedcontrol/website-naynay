@@ -6,6 +6,14 @@ type headerTagsType = {
     second?: string;
 };
 
+const logoText = (array: Array<string>): JSX.Element => {
+    return (
+        <span>
+            {array[0]} <span className="naynay">Nay Nay</span> {array[1]}
+        </span>
+    );
+};
+
 export function H1(props: headerTagsType): JSX.Element {
     return (
         <h1>
@@ -25,13 +33,17 @@ export function H2(props: headerTagsType): JSX.Element {
 }
 
 export function PageCombination(props: headerTagsType): JSX.Element {
+    const replacedLogo = props.first.split('{naynay}');
+    const replacedLogoSecond = props.first.split('{naynay}');
     return (
         <h1 className="text-center">
-            <span>{props.first}</span>
+            <span>{replacedLogo.length > 1 ? logoText(replacedLogo) : props.first}</span>
             <Ornament class={props.second ? undefined : 'mb-5'} />
             {props.second ? (
                 <blockquote className="blockquote">
-                    <p className="lead-naynay mt-4">{props.second}</p>
+                    <p className="lead-naynay mt-4">
+                        {replacedLogoSecond.length > 1 ? logoText(replacedLogoSecond) : props.second}
+                    </p>
                 </blockquote>
             ) : null}
         </h1>
