@@ -24,17 +24,25 @@ export function H1(props: headerTagsType): JSX.Element {
 }
 
 export function H2(props: headerTagsType): JSX.Element {
+    const replacedLogo = props.first.split('{naynay}');
+    const replacedLogoSecond = props.second?.split('{naynay}');
     return (
         <h2>
-            <span>{props.first} </span>
-            {props.second ? <span>{props.second}</span> : null}
+            <span>{replacedLogo.length > 1 ? logoText(replacedLogo) : props.first}</span>
+            {props.second ? (
+                replacedLogoSecond && replacedLogoSecond.length > 1 ? (
+                    logoText(replacedLogoSecond)
+                ) : (
+                    <span>{props.second}</span>
+                )
+            ) : null}
         </h2>
     );
 }
 
 export function PageCombination(props: headerTagsType): JSX.Element {
     const replacedLogo = props.first.split('{naynay}');
-    const replacedLogoSecond = props.first.split('{naynay}');
+    const replacedLogoSecond = props.second?.split('{naynay}');
     return (
         <h1 className="text-center">
             <span>{replacedLogo.length > 1 ? logoText(replacedLogo) : props.first}</span>
@@ -42,7 +50,9 @@ export function PageCombination(props: headerTagsType): JSX.Element {
             {props.second ? (
                 <blockquote className="blockquote">
                     <p className="lead-naynay mt-4">
-                        {replacedLogoSecond.length > 1 ? logoText(replacedLogoSecond) : props.second}
+                        {replacedLogoSecond && replacedLogoSecond.length > 1
+                            ? logoText(replacedLogoSecond)
+                            : props.second}
                     </p>
                 </blockquote>
             ) : null}

@@ -4,7 +4,7 @@ import { PageCombination } from '../components/HeaderTags';
 import Jumbotron from '../components/Jumbotron';
 
 const PageInformation = {
-    title: 'Prijzen indicatie',
+    title: 'Prijzen 2020',
     pageTitle: 'Prijsinformate',
 };
 
@@ -82,8 +82,8 @@ const Prijzen = (): JSX.Element => {
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>Lichtplan</td>
-                                            <td>
+                                            <td className="borderBottom">Lichtplan</td>
+                                            <td className="borderBottom">
                                                 <strong>
                                                     &euro; 70 <small>/ uur gemiddeld</small>
                                                 </strong>

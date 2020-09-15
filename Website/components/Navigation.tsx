@@ -46,7 +46,7 @@ const Navigation = (): JSX.Element => (
                 <li className="nav-item">
                     <ActiveLink href="/over-ons" activeClassName="active">
                         <a className="nav-link">
-                            Over NayNay <span className="sr-only">(current)</span>
+                            Over Nay Nay<span className="sr-only">(current)</span>
                         </a>
                     </ActiveLink>
                 </li>

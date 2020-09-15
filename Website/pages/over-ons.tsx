@@ -42,7 +42,7 @@ const OverOns = (): JSX.Element => (
                         verbouwing, het stylen van een woonkamer of enkel een kleuradvies is, zorgt voor wederzijdse
                         energie en maakt je beiden blij……de basis om te werken als interieur designer was gelegd!
                     </p>
-                    <H2 first={'De naam Nay Nay'} />
+                    <H2 first={'De naam {naynay}'} />
                     <p>
                         Tijdens mijn werk als manager werd het in de loop van de tijd duidelijk dat ik met tijden
                         eigenwijs en onafhankelijk in denken en doen kan zijn. In de periode dat ik bij een grote

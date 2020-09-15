@@ -22,24 +22,19 @@ const WatBiedenWe = (): JSX.Element => {
                 <div className="row mt-5">
                     <div className="col-sm-12">
                         <div className="card border-nn-primary">
-                            <h5 className="card-header bg-nn-primary text-white">De eerste stap</h5>
+                            <h5 className="card-header bg-nn-primary text-white">Intakegesprek en advies</h5>
                             <div className="card-body">
-                                <h5 className="card-title">Intakegesprek en advies</h5>
                                 <p className="card-text">
                                     Het inhuren van een interieur designer is een investering qua tijd en geld. Het is
                                     daarom belangrijk om helder te krijgen wat het doel is dat we gezamenlijk willen
-                                    bereiken en tussendoor af te stemmen.
+                                    bereiken en tussendoor af te stemmen. Dit kan online of op locatie. De benodigde
+                                    tijd per ruimte is gemiddeld 1 - 2 uur
                                 </p>
                             </div>
-                            <div className="card-header">Online aanvraag / Op Locatie</div>
-                            <div className="card-header">Gemiddelde tijd per ruimte</div>
-                            <ul className="list-group list-group-flush">
-                                <li className="list-group-item">1 – 2 uur</li>
-                            </ul>
-                            <div className="card-header">Resultaat:</div>
+                            <div className="card-header bg-nn-highlights">Resultaat:</div>
                             <ul className="list-group list-group-flush">
                                 <li className="list-group-item">Verslag intakegesprek</li>
-                                <li className="list-group-item">uitgewerkt advies op maat</li>
+                                <li className="list-group-item">Uitgewerkt advies op maat</li>
                             </ul>
                             <div className="card-footer bg-success text-center">
                                 <span className="h6 text-white">
@@ -59,7 +54,7 @@ const WatBiedenWe = (): JSX.Element => {
                 <div className="row mt-5">
                     <div className="col-sm-12 card-deck">
                         <div className="card">
-                            <div className="card-img-top">
+                            <div className="card-img-top bg-nn-secondary">
                                 <Logo />
                             </div>
                             <div className="card-body-top">
@@ -70,7 +65,7 @@ const WatBiedenWe = (): JSX.Element => {
                             <ul className="list-group list-group-flush">
                                 <li className="list-group-item">4 – 8 uur</li>
                             </ul>
-                            <div className="card-header">Resultaat:</div>
+                            <div className="card-header bg-nn-highlights">Resultaat:</div>
                             <ul className="list-group list-group-flush">
                                 <li className="list-group-item">Programma van Eisen</li>
                                 <li className="list-group-item">Plattegrond met nieuwe indeling</li>
@@ -97,13 +92,12 @@ const WatBiedenWe = (): JSX.Element => {
                             <ul className="list-group list-group-flush">
                                 <li className="list-group-item">8 – 12 uur</li>
                             </ul>
-                            <div className="card-header">Resultaat:</div>
+                            <div className="card-header bg-nn-highlights">Resultaat:</div>
                             <ul className="list-group list-group-flush">
                                 <li className="list-group-item">Programma van Eisen</li>
                                 <li className="list-group-item">Plattegrond met nieuwe indeling</li>
                                 <li className="list-group-item">Kleuradvies</li>
                                 <li className="list-group-item">Advies inclusief overzicht leveranciers</li>
-                                <li className="list-group-item">Nieuw meubilair</li>
                             </ul>
                             <div className="card-body"></div>
                             <div className="card-footer bg-success text-center">
@@ -115,7 +109,7 @@ const WatBiedenWe = (): JSX.Element => {
                             </div>
                         </div>
                         <div className="card">
-                            <div className="card-img-top bg-nn-secondary">
+                            <div className="card-img-top">
                                 <Logo />
                             </div>
                             <div className="card-body-top">
@@ -126,7 +120,7 @@ const WatBiedenWe = (): JSX.Element => {
                             <ul className="list-group list-group-flush">
                                 <li className="list-group-item">2 – 4 uur</li>
                             </ul>
-                            <div className="card-header">Resultaat:</div>
+                            <div className="card-header bg-nn-highlights">Resultaat:</div>
                             <ul className="list-group list-group-flush">
                                 <li className="list-group-item">Advies voor wisseling accessoires winter/zomer</li>
                                 <li className="list-group-item">Advies inclusief overzicht leveranciers</li>
@@ -152,7 +146,7 @@ const WatBiedenWe = (): JSX.Element => {
                             <ul className="list-group list-group-flush">
                                 <li className="list-group-item">2 – 4 uur</li>
                             </ul>
-                            <div className="card-header">Resultaat:</div>
+                            <div className="card-header bg-nn-highlights">Resultaat:</div>
                             <ul className="list-group list-group-flush">
                                 <li className="list-group-item">
                                     Plan hoe en welke lampen bijdragen aan de gewenste sfeer of functie

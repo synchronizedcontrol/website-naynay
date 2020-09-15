@@ -134,6 +134,10 @@ span.naynay {
     justify-content: space-between;
 }
 
+.borderBottom {
+    border-bottom: 1px solid #dee2e6;
+}
+
 /* Header and Footer */
 
 footer {
@@ -153,6 +157,10 @@ footer li {
 
     + li {
         margin-left: 1rem;
+    }
+
+    & .nav-link {
+        padding: 0.5em 0;
     }
 }
 

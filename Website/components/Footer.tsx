@@ -6,10 +6,18 @@ const Footer = (): JSX.Element => (
         <div className="container-fluid p-3 p-md-5">
             <ul className="footer-links">
                 <li>
-                    <a href="#">Inspiratie</a>
+                    <ActiveLink href="/wat-bieden-we" activeClassName="active">
+                        <a className="nav-link">
+                            Wat bieden we? <span className="sr-only">(current)</span>
+                        </a>
+                    </ActiveLink>
                 </li>
                 <li>
-                    <a href="#">Prijzen</a>
+                    <ActiveLink href="/prijzen" activeClassName="active">
+                        <a className="nav-link">
+                            Prijzen <span className="sr-only">(current)</span>
+                        </a>
+                    </ActiveLink>
                 </li>
                 <li>
                     <ActiveLink href="/over-ons" activeClassName="active">
